@@ -1,4 +1,4 @@
-package lamda;
+package lambda;
 
 import java.util.stream.IntStream;
 

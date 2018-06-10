@@ -1,17 +1,19 @@
-package lamda;
+package lambda;
 
 /**
  * Created by KENT on 2018-06-09.
  */
 public class ThreadDemo {
     public static void main(String[] args) {
-        new Thread(new Runnable() {
+        Object target = new Runnable() {
             @Override
             public void run() {
                 System.out.println("trandition is ok");
             }
-        }).start();
+        };
+        new Thread((Runnable) target).start();
         // jdk8
-        new Thread(() -> System.out.println("lamda is ok")).start();
+        Object target2 = (Runnable) () -> System.out.println("lambda is ok");
+        new Thread((Runnable) target2).start();
     }
 }
