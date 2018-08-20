@@ -24,3 +24,5 @@ hs_err_pid*
 lamda/.idea/*
 
 *.iml
+data-structure/.idea/*
+design-pattern/.idea/*
